@@ -24,14 +24,9 @@ jobs:
       
       - name: Update npm
         run: npm install -g npm@latest
-        
-      - name: Setup Yarn
-        uses: yarnpkg/setup-yarn@v1
-        with:
-          version: '4.10.3'
       
       - name: Install Dependencies
-        run: yarn install --frozen-lockfile
+        run: npm ci
       
       - name: Publish
         run: npm publish
