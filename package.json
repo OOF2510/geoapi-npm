@@ -1,7 +1,13 @@
 {
-  "name": "geoapi",
+  "name": "@oof2510/geoapi",
   "author": "OOF2510",
   "description": "An npm module wrapper for my geoguess-api",
   "license": "MPL-2.0",
-  "packageManager": "yarn@4.10.3"
+  "version": "1.0.0",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "packageManager": "yarn@4.10.3",
+  "dependencies": {
+    "axios": "^1.13.2"
+  }
 }
