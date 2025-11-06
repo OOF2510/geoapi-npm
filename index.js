@@ -15,7 +15,7 @@ function normalizeBaseUrl(url) {
 }
 
 function buildError(error, context) {
-    const parts = [`GeoApi request failed${context ? ` during ${context}` : ''}`];
+    const parts = [`Api request failed${context ? ` during ${context}` : ''}`];
 
     if (error.response) {
         parts.push(`status ${error.response.status}`);

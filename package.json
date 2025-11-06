@@ -3,7 +3,12 @@
   "author": "OOF2510",
   "description": "An npm module wrapper for my geoguess-api",
   "license": "MPL-2.0",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oof2510/geoapi-npm.git"
+  },
+  "private": false,
   "main": "index.js",
   "types": "index.d.ts",
   "packageManager": "yarn@4.10.3",
