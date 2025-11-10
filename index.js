@@ -121,6 +121,14 @@ class GeoApi {
     }
 
     /**
+     * Fetches a random street-view panorama image with geographic metadata.
+     * @returns {Promise<{imageUrl: string, coordinates: {lat: number, lon: number}, countryName: string|null, countryCode: string|null, contributor: string|null}>} Image and location details.
+     */
+    async getPano() {
+        return this.request({ method: 'get', url: '/getPano' }, 'fetch panorama image payload');
+    }
+
+    /**
      * Starts a new game session.
      * @returns {Promise<{gameSessionId: string, seed: string, expiresAt: string}>} Game session metadata.
      */
