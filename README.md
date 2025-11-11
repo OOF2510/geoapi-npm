@@ -100,7 +100,7 @@ Fetches the leaderboard.
 
 - `limit` (number, optional): Maximum number of results to return.
 
-**Returns:** Promise<any>
+**Returns:** `Promise<Array<{ rank: number, score: number, createdAt: string, gameSessionId: string | null }>>`
 
 #### `health()`
 

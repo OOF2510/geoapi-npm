@@ -85,7 +85,7 @@ declare class GeoApi {
    * Retrieves the leaderboard of top scores
    * @param limit - Optional maximum number of entries to return
    */
-  getLeaderboard(limit?: number): Promise<Array<{rank: number, score: number, createdAt: string}>>;
+  getLeaderboard(limit?: number): Promise<Array<{rank: number, score: number, createdAt: string, gameSessionId: string | null}>>;
 
   /**
    * Checks the API health status

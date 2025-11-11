@@ -201,7 +201,7 @@ class GeoApi {
     /**
      * Retrieves the leaderboard of top scores.
      * @param {number} [limit] - Optional maximum number of entries to return.
-     * @returns {Promise<Array<{rank: number, score: number, createdAt: string}>>} Leaderboard standings.
+     * @returns {Promise<Array<{rank: number, score: number, createdAt: string, gameSessionId: string|null}>>} Leaderboard standings.
      */
     async getLeaderboard(limit) {
         return this.request(
